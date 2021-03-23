@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -19,6 +20,9 @@ public class Category {
 
     @Column(name = "category_name")
     private String CategoryName;
+
+    @OneToMany(mappedBy = "category")
+    private Set<Order> orders;
 
 
 }

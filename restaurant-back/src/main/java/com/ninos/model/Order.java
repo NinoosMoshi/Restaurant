@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "orderfood")
+@Table(name = "orders")
 public class Order {
 
     @Id
@@ -29,6 +29,10 @@ public class Order {
 
     @Column(name = "description")
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
 
 }

@@ -31,6 +31,7 @@ public class Order {
     private String img;
 
     @Column(name = "description")
+    @Lob                           // it will size of String from varChar 255 into long text
     private String description;
 
 

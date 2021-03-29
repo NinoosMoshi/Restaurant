@@ -1,5 +1,6 @@
 package com.ninos.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,7 +35,7 @@ public class Category {
 
 
 
-
+    @JsonIgnore
     @OneToMany(mappedBy = "category")
     private Set<Order> orders;
 

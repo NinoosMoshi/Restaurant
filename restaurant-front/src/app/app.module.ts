@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderService } from './service/order.service';
+import { OrderItemsComponent } from './components/order-items/order-items.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderItemsComponent
   ],
   imports: [
     BrowserModule,

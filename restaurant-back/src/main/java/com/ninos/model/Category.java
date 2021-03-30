@@ -23,7 +23,7 @@ public class Category {
     private Long id;
 
     @Column(name = "category_name")
-    private String CategoryName;
+    private String categoryName;
 
     @Column(name="date_create")
     @CreationTimestamp          // it will take local time and put it in the database

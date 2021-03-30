@@ -1,7 +1,7 @@
 export class Category {
 
   id:number;
-  CategoryName:string;
+  categoryName:string;
   dateCreated:Date;
   dateUpdated:Date;
 

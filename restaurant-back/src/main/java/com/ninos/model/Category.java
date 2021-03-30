@@ -25,6 +25,9 @@ public class Category {
     @Column(name = "category_name")
     private String categoryName;
 
+    @Column(name ="category_logo")
+    private String categoryLogo;
+
     @Column(name="date_create")
     @CreationTimestamp          // it will take local time and put it in the database
     private Date dateCreated;

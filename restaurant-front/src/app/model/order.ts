@@ -1,7 +1,7 @@
 export class Order {
 
     id:number;
-    OrderName:string;
+    orderName:string;
     price:number
     img:string;
     description:string;

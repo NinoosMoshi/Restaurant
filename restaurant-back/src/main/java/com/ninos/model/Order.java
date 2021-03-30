@@ -22,7 +22,7 @@ public class Order {
     private Long id;
 
     @Column(name = "order_name")
-    private String OrderName;
+    private String orderName;
 
     @Column(name = "price")
     private BigDecimal price;

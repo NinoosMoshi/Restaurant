@@ -1167,10 +1167,27 @@ section {
   height: 600px;
 }
 
-.mybtn{
+/* .mybtn{
    position: absolute;
    bottom: 0;
    width: 270px;
+} */
+
+img{
+  height: 172px;
+}
+
+.order-item{
+  height: 382px;
+}
+
+#hero h1 {
+  font-size: 20px;
+  font-family: revert;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  margin: 0px 0px 0px 0px !important;
 }
 
 

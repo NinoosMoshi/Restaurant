@@ -15,7 +15,10 @@ export class OrderItemsComponent implements OnInit {
   constructor(private orderService:OrderService, private activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-     this.finishOrders();
+
+    this.activeRoute.paramMap.subscribe( () =>{
+      this.finishOrders();
+    })
 
   }
 

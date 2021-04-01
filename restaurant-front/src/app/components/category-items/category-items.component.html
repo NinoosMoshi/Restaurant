@@ -4,7 +4,7 @@
 
 
   <li *ngFor="let temp of categories">
-    <a href="category/{{temp.id}}"><i class="{{temp.categoryLogo}}"></i> <span>{{temp.categoryName}}</span></a>
+    <a routerLink="category/{{temp.id}}"><i class="{{temp.categoryLogo}}"></i> <span>{{temp.categoryName}}</span></a>
   </li>
 
   <!-- <li><a href="#resume"><i class="fas fa-cocktail"></i> <span>Cold Drinks</span></a></li>

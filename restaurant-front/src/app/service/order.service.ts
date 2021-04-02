@@ -20,8 +20,15 @@ export class OrderService {
     )
   }
 
-  getOrdersByCategoryId(id): Observable<Order[]>{
+  getOrdersByCategoryId(id: string): Observable<Order[]>{
     return this.http.get<Order[]>(`${this.baseUrl}/category?id=${id}`).pipe(
+      map(response => response)
+    )
+  }
+
+
+  getOrdersByKeyword(keyword: string): Observable<Order[]>{
+    return this.http.get<Order[]>(`${this.baseUrl}/orderkey?keyword=${keyword}`).pipe(
       map(response => response)
     )
   }

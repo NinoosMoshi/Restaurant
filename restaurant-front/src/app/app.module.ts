@@ -8,6 +8,7 @@ import { OrderService } from './service/order.service';
 import { OrderItemsComponent } from './components/order-items/order-items.component';
 import { CategoryItemsComponent } from './components/category-items/category-items.component';
 import { DropdownMenuComponent } from './components/dropdown-menu/dropdown-menu.component';
+import { SearchOrderComponent } from './components/search-order/search-order.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DropdownMenuComponent } from './components/dropdown-menu/dropdown-menu.
     AppComponent,
     OrderItemsComponent,
     CategoryItemsComponent,
-    DropdownMenuComponent
+    DropdownMenuComponent,
+    SearchOrderComponent
   ],
   imports: [
     BrowserModule,

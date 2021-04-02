@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path:'category/:id', component: OrderItemsComponent},
   {path:'category', component: OrderItemsComponent},
+  {path:'order/:key', component: OrderItemsComponent},
   {path:'order', component: OrderItemsComponent},
   {path:'',redirectTo:'/order',pathMatch:'full'},
   {path:'**',redirectTo:'/order',pathMatch:'full'}

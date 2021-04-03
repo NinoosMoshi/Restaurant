@@ -9,6 +9,7 @@ import { OrderItemsComponent } from './components/order-items/order-items.compon
 import { CategoryItemsComponent } from './components/category-items/category-items.component';
 import { DropdownMenuComponent } from './components/dropdown-menu/dropdown-menu.component';
 import { SearchOrderComponent } from './components/search-order/search-order.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SearchOrderComponent } from './components/search-order/search-order.com
     OrderItemsComponent,
     CategoryItemsComponent,
     DropdownMenuComponent,
-    SearchOrderComponent
+    SearchOrderComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
+import { OrderService } from './../../service/order.service';
 import { Component, OnInit } from '@angular/core';
+import { Order } from 'src/app/model/order';
 
 @Component({
   selector: 'app-search-order',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchOrderComponent implements OnInit {
 
-  constructor() { }
+  orders: Order[] = [];
+
+  constructor(private orderService:OrderService) { }
 
   ngOnInit(): void {
+  }
+
+  doSearch(value: string){
+    this.orderService.getOrdersByKeyword(value).subscribe(
+      data =>{
+        this.orders = data;
+      }
+    )
   }
 
 }

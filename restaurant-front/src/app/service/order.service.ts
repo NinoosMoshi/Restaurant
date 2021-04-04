@@ -34,4 +34,11 @@ export class OrderService {
   }
 
 
+  getOrderById(id: string):Observable<Order>{
+     return this.http.get<Order>(`${this.baseUrl}/order?id=${id}`).pipe(
+       map(response => response)
+     );
+  }
+
+
 }

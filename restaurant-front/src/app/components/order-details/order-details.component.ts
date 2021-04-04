@@ -1,7 +1,7 @@
 import { Order } from './../../model/order';
 import { OrderService } from 'src/app/service/order.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-details',
@@ -12,7 +12,7 @@ export class OrderDetailsComponent implements OnInit {
 
   order: Order=null;
 
-  constructor(private orderService: OrderService, private activeRoute: ActivatedRoute) { }
+  constructor(private orderService: OrderService, private activeRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.getOrder();
@@ -25,6 +25,10 @@ export class OrderDetailsComponent implements OnInit {
         this.order = data
       }
     )
+  }
+
+  undo(){
+   this.router.navigateByUrl("/order");
   }
 
 }

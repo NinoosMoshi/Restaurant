@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class OrderItemsComponent implements OnInit {
 
   orders: Order[] = [];
+  page: number = 1;
 
   constructor(private orderService:OrderService, private activeRoute: ActivatedRoute) { }
 
@@ -59,6 +60,11 @@ export class OrderItemsComponent implements OnInit {
         this.orders = data
       }
     )
+  }
+
+
+  doing(){
+    alert(this.page);
   }
 
 }

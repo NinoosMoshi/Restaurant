@@ -28,7 +28,9 @@ export class OrderDetailsComponent implements OnInit {
   }
 
   undo(){
-   this.router.navigateByUrl("/order");
+    // this.router.navigateByUrl("[order]");  or
+       this.router.navigateByUrl("/order");
+
   }
 
 }

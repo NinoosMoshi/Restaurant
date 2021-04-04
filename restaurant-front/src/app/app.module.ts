@@ -10,6 +10,7 @@ import { CategoryItemsComponent } from './components/category-items/category-ite
 import { DropdownMenuComponent } from './components/dropdown-menu/dropdown-menu.component';
 import { SearchOrderComponent } from './components/search-order/search-order.component';
 import { OrderDetailsComponent } from './components/order-details/order-details.component';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { OrderDetailsComponent } from './components/order-details/order-details.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbPaginationModule,
   ],
   providers: [OrderService],
   bootstrap: [AppComponent]

@@ -13,4 +13,18 @@
       <button class="btn btn-primary mybtn">Add to Cart</button>
     </div>
   </div>
+
+  <div class="col-md-9 pag" style="padding-left: 30%">
+    <!-- pageSize: how many pages you want
+         collectionSize: the total number of orders -->
+    <ngb-pagination
+       [(page)]="page"
+       [pageSize]="3"
+       [collectionSize]="15"
+       (pageChange)="doing()"
+    >
+    </ngb-pagination>
+  </div>
+
+
 </div>
